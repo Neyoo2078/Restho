@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500&family=Jost:wght@300&family=Nunito+Sans:opsz,wght@6..12,300&family=Orbitron&family=Roboto&family=Sedgwick+Ave+Display&display=swap');
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #fff;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Button */
+.bbutton:hover,
+.bbutton:focus {
+  box-shadow: inset -6.3em 0 0 0 #000, inset 6.3em 0 0 0 #000;
+}
+
+.bbutton:hover,
+.bbutton:focus {
+  border-color: #000;
+  color: #fff;
+}
+.bbutton {
+  color: #fff;
+  transition: 0.4s;
+  background: #bf9444;
+  width: 198px;
+  height: 49px;
+
+  font: inherit;
+  line-height: 1;
+}
+/* About Button */
+.bbbutton:hover,
+.bbbutton:focus {
+  box-shadow: inset -6.3em 0 0 0 #bf9444, inset 6.3em 0 0 0 #bf9444;
+}
+
+.bbbutton:hover,
+.bbbutton:focus {
+  border-color: #000;
+  color: #fff;
+}
+.bbbutton {
+  color: #bf9444;
+  transition: 0.4s;
+  background: #fff;
+  width: 198px;
+  height: 49px;
+
+  font: inherit;
+  line-height: 1;
+}
+
+.bullet {
+  height: 14px;
+  width: 14px;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+
+  background-color: #bf9444;
+  opacity: 0.5;
+  position: relative;
+}
+.active {
+  background-color: #f8d18a;
+}
+
+.bullet::after {
+  content: '';
+  height: 20px;
+  width: 20px;
+  background-color: '#bf9444';
+  border: 1px solid #bf9444;
+  border-radius: 2px;
+  position: absolute;
+  left: -3px;
+  top: -3px;
+}
+
+.rotating-div {
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  animation: rotate 25s linear infinite; /* Rotate animation */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* Start rotation from 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* End rotation at 360 degrees */
+  }
+}
+
+.reguler-item::after {
+  content: '';
+  height: 60px;
+  width: 60px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  z-index: -1;
+  transition: 0.35s;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    359.58deg,
+    #002133 0.39%,
+    rgba(0, 33, 51, 0) 51.47%
+  );
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-in;
+}
