@@ -17,7 +17,7 @@ const PageInitialize = () => {
       }
 
       setCount(count);
-    }, 100);
+    }, 50);
 
     return () => clearInterval(IntCount);
   };
@@ -36,10 +36,10 @@ const PageInitialize = () => {
 
             y: { duration: 2 },
           }}
-          className={`bg-black fixed inset-0 text-white z-40`}
+          className={`bg-black fixed inset-0 text-white z-40 flex items-center justify-center`}
         >
           <div>
-            <h1>{Count}</h1>
+            <h1 className="text-[60px] font-[500]">{Count}</h1>
           </div>
         </motion.div>
       )}
