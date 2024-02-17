@@ -59,9 +59,9 @@ const FreeSlider = () => {
             <SwiperSlide key={i}>
               <div className="w-[320px] relative h-[120px]  text-black pr-[5px]  flex flex-col items-end justify-center mt-8 z-40 overflow-visible border-[1px]">
                 <RotatingCircle items={items.image} />
-                <div className="w-[60%] flex flex-col ">
+                <div className="w-[60%] flex flex-col text-black">
                   <h1 className="font-Cormorant text-[26px]">{items.title}</h1>
-                  <p className="text-[16px]">
+                  <p className="text-[16px] text-black">
                     Lorem ipsum dolor sit amet consectet.
                   </p>
                 </div>

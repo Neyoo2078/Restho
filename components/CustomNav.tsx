@@ -28,7 +28,7 @@ const CustomNav = () => {
   }, []);
 
   return (
-    <div className="w-full h-[863px] bg-regular-bg pt-[60px]  lg:p-0">
+    <div className="w-full h-[863px] bg-regular-bg pt-[60px] text-black  lg:p-0">
       <div className="w-full flex flex-col items-center gap-4">
         <div className="flex gap-2 items-center justify-center">
           <Image src="/sub-title-vec.svg" alt="photo" width={25} height={25} />

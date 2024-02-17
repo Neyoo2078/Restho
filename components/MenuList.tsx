@@ -7,7 +7,7 @@ import MenuItem from './MeniItem';
 
 const MenuList = () => {
   return (
-    <div className="w-full bg-white pt-[30px]  lg:p-[60px] ">
+    <div className="w-full text-black bg-white pt-[30px]  lg:p-[60px] ">
       <div className="lg:w-[90%] w-full m-auto">
         <div className="w-full flex lg:flex-row flex-col justify-between items-center">
           <div className="flex flex-col gap-3 items-center lg:items-start w-full">

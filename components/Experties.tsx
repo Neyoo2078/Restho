@@ -6,7 +6,7 @@ import Chefs from './Chefs';
 
 const Experties = () => {
   return (
-    <div className="w-full overflow-hidden bg-white pt-[30px]">
+    <div className="w-full text-black overflow-hidden bg-white pt-[30px]">
       <div className="w-[90%] m-auto flex py-[30px] flex-col items-center gap-4">
         <div className="flex flex-col items-center gap-3">
           <div className="flex gap-2 items-center">

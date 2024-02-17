@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const ScaleX = () => {
   return (
-    <div className="w-full  bg-white pt-[30px]">
+    <div className="w-full text-black  bg-white pt-[30px]">
       <div className="w-[90%] m-auto flex flex-col  items-center gap-4">
         <div className="flex flex-col items-center gap-3">
           <div className="flex gap-2 items-center">

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <div className="bg-white  flex   lg:min-h-[400px] items-start lg:p-[60px] w-full  ">
+    <div className="bg-white  flex   lg:min-h-[400px] items-start lg:p-[60px] w-full text-black  ">
       <div className="flex lg:flex-row w-full h-full   p-[10px] lg:p-0 flex-col gap-11 justify-between items-start">
         <div className="w-[328px] h-[245px]  block lg:hidden lg:mb-0 mb-[50px]">
           <Image
