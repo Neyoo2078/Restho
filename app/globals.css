@@ -27,6 +27,29 @@ body {
     text-wrap: balance;
   }
 }
+.jumbotron h1 {
+  color: #353535;
+}
+footer {
+  margin-bottom: 0 !important;
+  margin-top: 80px;
+}
+footer p {
+  margin: 0;
+  padding: 0;
+}
+span.icon {
+  margin: 0 5px;
+  color: #d64541;
+}
+h2 {
+  color: #bdc3c7;
+
+  letter-spacing: 1px;
+}
+.mrng-60-top {
+  margin-top: 60px;
+}
 
 /* Button */
 .bbutton:hover,

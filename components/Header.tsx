@@ -16,14 +16,14 @@ const Header = () => {
           </p>
         </div>
       </div>
-      <div className="w-[90%] hidden lg:flex overflow-visible   items-center justify-between bg-[#fff] px-[30px] h-[87px] rounded-[48px]">
+      <div className="w-[90%] flex overflow-visible   items-center justify-between bg-[#fff] px-[30px] h-[87px] rounded-[48px]">
         <Image src="/header2-logo.svg" alt="logo" width={181} height={41} />
-        <div className=" flex gap-5 lg:gap-1  h-[40px]  overflow-visible ">
+        <div className=" lg:flex hidden  gap-5 lg:gap-1  h-[40px]  overflow-visible ">
           {NavLinks.map((items: any, i: number) => (
             <CustomMenu items={items} key={i} />
           ))}
         </div>
-        <div className="rounded-[50px] w-[198px] flex justify-center items-center bg-[#bf9444] h-[49px]  overflow-hidden  border-[#bf9444]">
+        <div className="rounded-[50px] w-[198px] hidden lg:flex justify-center items-center bg-[#bf9444] h-[49px]  overflow-hidden  border-[#bf9444]">
           <button className="bbutton">Find Reservation</button>
         </div>
       </div>
