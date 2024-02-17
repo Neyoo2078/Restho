@@ -17,8 +17,8 @@ const config: Config = {
         'regular-bg': 'url(/regular-items-bg.png)',
       },
       fontFamily: {
-        Jost: ['Jost'],
-        Cormorant: ['Cormorant Infant'],
+        Jost: ['Jost', 'serif'],
+        Cormorant: ['Cormorant Garamond', 'serif'],
       },
     },
   },
